@@ -1,0 +1,25 @@
+.item-wrapper{
+	height:300px;
+}
+#task-creat{
+	border:solid black 1px;
+	/* position:absolute; */
+	margin:auto;
+	
+}
+#task-creat input{
+	width:100%;
+	border-radius:4px;
+	margin-top:5px;
+	margin-bottom:5px;
+	
+}
+#input-test-description{
+	height:200px;
+}
+.btn-submit{
+	width:70px;
+	}
+#todo-list  ul{
+	list-style-type:none;
+}

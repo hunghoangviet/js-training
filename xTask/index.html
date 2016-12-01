@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>xTask</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+	<div class="container-fluid">
+		<h1 style="text-align:center">DASHBOARD</h1>
+		<div class="row">
+			<div id="task-creat"class="col-md-6 item-wrapper">
+				<form>
+					<input id="input-title" type="text" placeholder="Title"></input>
+					<input id="input-description" type="text" placeholder="Description"></input>
+					<button class="btn btn-primary btn-submit" type="button" onclick="inflateViewWithItem()">Pin</p> 
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div id="todo-list" class="col-md-6 item-wrapper">
+				
+			</div>
+			<div id="done-list" class="col-md-6 item-wrapper">
+				
+			</div>
+		</div>
+		
+		
+		<button id="myBtn">Open Modal</button>
+
+			
+			<div id="myModal" class="modal">
+
+			  
+			  <div class="modal-content">
+				<span class="close">x</span>
+				<form>
+					<input id="edit-title" type="text" placeholder="Title"></input>
+					<input id="edit-description" type="text" placeholder="Description"></input>
+					<button id="edit-confirm-btn"class="btn btn-primary btn-submit" type="button" onclick="editItemConfirm">Confirm</p> 
+				</form>
+			  </div>
+			</div>
+</div>
+
+
+
+		
+		
+		
+			<script src="js/jquery.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/scripts.js"></script>
+  </body>
+</html>
