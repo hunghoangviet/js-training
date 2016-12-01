@@ -178,8 +178,8 @@ moveItemToTodoTab= function(undoneTag){
 	var undoneDetail = undoneItem.getDescription(); 
 	
 	var node = document.createElement("LI");
-	var headingIndex = "heading-" + index;
-	var descriptionIndex = "description-" + index;
+	var headingIndex = "heading-item-" + index;
+	var descriptionIndex = "description-item-" + index;
 	
 	
 	node.setAttribute("id",itemId);
@@ -257,12 +257,12 @@ editItem = function(editId){
 		confirmButton.onclick = function(){
 			var tit =document.getElementById("edit-title").value;
 			var des =document.getElementById("edit-description").value;
-			console.log(tit);
+			//console.log(tit);
 			todoItems[editTag].setTitle(tit);
 			todoItems[editTag].setDescription(des);
 			//thay đổi view
 			var editHeadingId = "heading-item-" + editTag;
-			
+			console.log(editHeadingId);
 			var editDescriptionId = "description-item-" + editTag;
 			document.getElementById(editHeadingId).innerHTML = tit;
 			document.getElementById(editDescriptionId).innerHTML = des;
